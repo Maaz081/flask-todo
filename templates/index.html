@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud To-Do App</title>
+</head>
+<body>
+<h1>My To-Do List (SaaS)</h1>
+<form action="/add" method="post">
+<input type="text" name="task" placeholder="Enter task">
+<button type="submit">Add</button>
+</form>
+<ul>
+{% for task in tasks %}
+<li>{{ task }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
